@@ -1,0 +1,46 @@
+@font-face {
+    font-family: "big john";
+    unicode-range:  U+00-024F,U+2160-2188;
+    src: url(../BigJohn/BIGJOHN.otf);
+}
+
+@font-face {
+    font-family: "slim john";
+    src: url(../BigJohn/SlimJOHN.otf);
+}
+
+@font-face {
+    font-family: "taipei bold";
+    unicode-range: U+4E00-9FFF;
+    src: url(../font/TaipeiSansTCBeta-Bold.ttf);
+}
+
+body {
+    font-family:"big john";
+}
+
+.content {
+    position: absolute;
+    left: 50%;
+    top: 50vh;
+    width: fit-content;
+    transform: translate(-50%,-50%);
+}
+
+table {
+    margin-top: 20px;
+    width: 304px;
+}
+
+tr {
+    width: 304px;
+}
+
+
+input {
+    width: 150px;
+}
+
+#amount-output {
+    width: 50px;
+}

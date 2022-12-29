@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        ResistanceCalculator
+    </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/resistance.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="static/javascript/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="static/javascript/animation.js"></script>
+</head>
+
+<body class="min-h-screen">
+    <div class="flex justify-center align-center text-center content flex-col mx-0">
+        <div class="resistance">
+            <div class="stick"></div>
+            <div class="resistance-colour">
+                <div class="colour"><select id="colour1" class="select"></select></div>
+                <div class="colour"><select id="colour2" class="select"></select></div>
+                <div class="colour"><select id="colour3" class="select"></select></div>
+                <div class="colour"><select id="colour4" class="select"></select></div>
+            </div>
+        </div>
+        <div>
+            <table class="panel">
+                <tr>
+                    <td>color:</td>
+                    <td id="color-output"></td>
+                </tr>
+                <tr >
+                    <td id="amount-output" class="mt-[10%] pt-2" colspan="2"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+.resistance {
+    display: block;
+    position: relative;
+    height: 72px;
+}
+
+.resistance-colour {
+    width: 243px;
+    height: 60px;
+    background-color: #EEEDB5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    border-radius: 20px;
+}
+.resistance-colour::before {
+    content: "";
+    width: 20%;
+    height: 120%;
+    background-color: #EEEDB5;
+    position: absolute;
+    left: 0;
+    top: -10%;
+    z-index: 0;
+
+    border-radius: 20px;
+}
+.resistance-colour::after {
+    content: "";
+    width: 20%;
+    height: 120%;
+    background-color: #EEEDB5;
+    position: absolute;
+    right: 0;
+    top: -10%;
+    z-index: 0;
+
+    border-radius: 20px;
+}
+
+.resistance .stick {
+    width: 300px;
+    height: 10px;
+    background-color: #B1B1B1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.resistance-colour {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 30.4px;
+    z-index: 10;
+}
+.resistance-colour .colour {
+    width: 12.75px;
+    height: 100%;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.resistance-colour :nth-child(3) {
+    margin-right: 10%;
+}
+
+.colour select {
+    width: 12.75px;
+    height: 100%;
+    appearance: none;
+    background-color: transparent;
+    color: transparent;
+}
+.colour select option {
+    background-color: white;
+    color: black;
+}
+
